@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto 3</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <h1 class="logo">Proyecto 3</h1>
+        <ul class="nav-links">
+            <li class="active"><a href="#"></a>Inicio</li>
+            <li><a href="#"></a>Acerca del Instrumento</li>
+            <li><a href="#"></a>Productos</li>
+            <li class="btn"><a href="#"></a>Contacto</li>
+        </ul>
+        <img src="/assets/menubutn.webp" alt="" class="menu-btn">
+    </nav>
+    <header>
+        <div class="header-content">
+            <h2>El mundo de la bateria</h2>
+            <div class="line"></div>
+                <h1>Tempo God</h1>
+                <a href="#" class="btn">Mas informacion</a>
+        </div>
+    </header>
+    <script>
+        const menuBtn = document.querySelector('.menu-btn')
+        const navlinks = document.querySelector('.nav-links')
+
+        menuBtn.addEventListener('click', () => {
+            navlinks.classList.toggle('mobile-menu');
+        });
+    </script>
+    <main>
+        <section class="about">
+            <div class="about-content">
+            <h1>Sobre el Instrumento</h1>
+            <div class="line"></div>
+            <p>Una batería es un conjunto de tambores, platillos y otros instrumentos de percusión, que se colocan en soportes para ser tocados por un solo músico,​ con baquetas en ambas manos y los pies accionando los pedales que controlan el platillo del hi-hat y el golpeador del bombo.</p>
+            <a href="https://es.wikipedia.org/wiki/Bater%C3%ADa_(instrumento_musical)#:~:text=Una%20bater%C3%ADa%20es%20un%20conjunto,y%20el%20golpeador%20del%20bombo." class="btn">Mas info</a>
+            </div>
+        </section>
+        <section class="products">
+            <div class="title">
+                <h1>Algunos Productos</h1>
+                <div class="line"></div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <img src="/assets/yamaha.jpg" alt="Foto de Yamaha Drum">
+                    <h4>Yamaha</h4>
+                    <p>La marca de baterias YAMAHA es una de las maximas exponentes del mundo de la percusion</p>
+                    <a href="https://usa.yamaha.com/products/musical_instruments/drums/index.html" class="btn">Mas Info</a>
+                </div>
+                <div class="col">
+                    <img src="/assets/tama.webp" alt="Foto de Tama Drum">
+                    <h4>Tama</h4>
+                    <p>La marca de bateria Tama es una de las maximas exponentes del mundo de la percusion</p>
+                    <a href="https://www.tama.com/asia/" class="btn">Mas Info</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <section class="footer">
+            <p>Club de Golf 7 Rios, Los Angeles, Bio Bio, Chile | Telefono: 973177098 | Email: alvaroandresgaticariquelme@gmail.com</p>
+            <p>Copyright © 2025 Proyecto 3</p>
+        </section>
+    </footer>
+</body>
+</html>
