@@ -1,6 +1,6 @@
 ﻿# Proyecto_modulo_3
 
- ### LINK AL PROYECTO: proyectomod3.netlify.app
+ ### LINK AL PROYECTO: [(proyectomod3.netlify.app)](https://proyectomod3.netlify.app/)
 
  ## INTRODUCCION AL PROYECTO
  ### Este proyecto consiste en una landing page de un proveedor de baterias. donde se muestra un poco de lo que consiste el instrumento como tambien sus productos mas relevantes ademas de un footer con informacion de contacto. Si bien es cierto, los botones de ruta no llevan a ningun lugar, es para tener una idea de lo que se puede hacer visualmente con un poco de html y css.
