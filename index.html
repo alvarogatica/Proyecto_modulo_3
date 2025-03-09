@@ -8,7 +8,7 @@
 </head>
 <body>
     <nav class="navbar">
-        <h1 class="logo">Proyecto 3</h1>
+        <img src="/assets/logobat.avif" alt="" class="logo">
         <ul class="nav-links">
             <li class="active"><a href="#"></a>Inicio</li>
             <li><a href="#"></a>Acerca del Instrumento</li>
@@ -25,14 +25,6 @@
                 <a href="#" class="btn">Mas informacion</a>
         </div>
     </header>
-    <script>
-        const menuBtn = document.querySelector('.menu-btn')
-        const navlinks = document.querySelector('.nav-links')
-
-        menuBtn.addEventListener('click', () => {
-            navlinks.classList.toggle('mobile-menu');
-        });
-    </script>
     <main>
         <section class="about">
             <div class="about-content">
@@ -69,5 +61,13 @@
             <p>Copyright © 2025 Proyecto 3</p>
         </section>
     </footer>
+    <script>
+        const menuBtn = document.querySelector('.menu-btn')
+        const navlinks = document.querySelector('.nav-links')
+
+        menuBtn.addEventListener('click', () => {
+            navlinks.classList.toggle('mobile-menu');
+        });
+    </script>
 </body>
 </html>
