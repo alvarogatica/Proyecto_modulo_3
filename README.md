@@ -40,7 +40,7 @@
         class="logo"
       />
       <ul class="nav-links">
-        <li><a href="#inicio" aria-current="page">Inicio</a></li>
+        <li><a href="index.html" aria-current="page">Inicio</a></li>
         <li><a href="#about">Acerca del Instrumento</a></li>
         <li><a href="#products">Productos</a></li>
         <li><a class="btn" href="#contact">Contacto</a></li>
@@ -156,7 +156,7 @@
       const navlinks = document.querySelector(".nav-links");
 
       menuBtn.addEventListener("click", () => {
-        navlinks.classList.toggle("mobile-menu");
+        navlinks.classList.toggle("open");
       });
     </script>
   </body>
@@ -166,127 +166,12 @@
 ### Solucion Completa del Archivo index.html
 
 ```HTML
-<!DOCTYPE html>
-<html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Proyecto 3</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <nav class="navbar" role="navigation">
-      <img
-        src="/assets/logobat.avif"
-        alt="Logo principal del sitio Tempo God con ilustración de batería"
-        class="logo"
-      />
-      <ul class="nav-links">
-        <li><a href="#inicio" aria-current="page">Inicio</a></li>
-        <li><a href="#about">Acerca del Instrumento</a></li>
-        <li><a href="#products">Productos</a></li>
-        <li><a class="btn" href="#contact">Contacto</a></li>
-      </ul>
-      <img
-        src="/assets/menubutn.webp"
-        alt="Icono de menú desplegable"
-        class="menu-btn"
-      />
-    </nav>
-
-    <header>
-      <div class="header-content">
-        <h2>El mundo de la batería</h2>
-        <div class="line"></div>
-        <h1>Tempo God</h1>
-        <a href="#about" class="btn">Más información</a>
-      </div>
-    </header>
-
-    <main role="main">
-      <section id="about" class="about">
-        <div class="about-content">
-          <h1>Sobre el Instrumento</h1>
-          <div class="line"></div>
-          <p>
-            Una batería es un conjunto de tambores, platillos y otros
-            instrumentos de percusión, que se colocan en soportes para ser
-            tocados por un solo músico,​ con baquetas en ambas manos y los pies
-            accionando los pedales que controlan el platillo del hi-hat y el
-            golpeador del bombo.
-          </p>
-          <a
-            href="https://es.wikipedia.org/wiki/Bater%C3%ADa_(instrumento_musical)#:~:text=Una%20bater%C3%ADa%20es%20un%20conjunto,y%20el%20golpeador%20del%20bombo."
-            class="btn"
-            target="_blank"
-            rel="noopener noreferrer"
-            >Más info</a
-          >
-        </div>
-      </section>
-
-      <section id="products" class="products">
-        <div class="title">
-          <h1>Algunos Productos</h1>
-          <div class="line"></div>
-        </div>
-        <div class="row">
-          <div class="col">
-            <img
-              src="/assets/yamaha.jpg"
-              alt="Batería acústica marca Yamaha color negro"
-            />
-            <h4>Yamaha</h4>
-            <p>
-              La marca de baterías Yamaha es una de las máximas exponentes del
-              mundo de la percusión.
-            </p>
-            <a
-              href="https://usa.yamaha.com/products/musical_instruments/drums/index.html"
-              class="btn"
-              target="_blank"
-              rel="noopener noreferrer"
-              >Más Info</a
-            >
-          </div>
-          <div class="col">
-            <img
-              src="/assets/tama.webp"
-              alt="Batería acústica marca Tama color rojo"
-            />
-            <h4>Tama</h4>
-            <p>
-              La marca de baterías Tama es una de las máximas exponentes del
-              mundo de la percusión.
-            </p>
-            <a
-              href="https://www.tama.com/asia/"
-              class="btn"
-              target="_blank"
-              rel="noopener noreferrer"
-              >Más Info</a
-            >
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <footer id="contact">
-      <section class="footer">
-        <p>
-          Club de Golf 7 Ríos, Los Ángeles, Biobío, Chile | Teléfono: 973177098
-          | Email: alvaroandresgaticariquelme@gmail.com
-        </p>
-        <p>Copyright © 2025 Proyecto 3</p>
-      </section>
-    </footer>
-
-    <script>
+<script>
       const menuBtn = document.querySelector(".menu-btn");
       const navlinks = document.querySelector(".nav-links");
 
       menuBtn.addEventListener("click", () => {
-        navlinks.classList.toggle("mobile-menu");
+        navlinks.classList.toggle("open");
       });
     </script>
   </body>
@@ -415,14 +300,14 @@ header {
   box-shadow: 2px 2px 5px #00000056;
 }
 
-/* Botón menú hamburguesa */
+/* Botón menú hamburguesa (Solo en dispositivos pequeños) */
 .menu-btn {
   position: absolute;
   top: 30px;
   right: 30px;
   width: 40px;
   cursor: pointer;
-  display: none;
+  display: none; /* Ocultarlo en pantallas grandes */
 }
 
 /* Secciones */
@@ -554,8 +439,9 @@ li:hover {
   cursor: pointer;
 }
 
-/* RESPONSIVE */
+/* Responsividad - Menú hamburguesa en pantallas pequeñas */
 @media only screen and (max-width: 850px) {
+  /* Mostrar botón de menú hamburguesa */
   .menu-btn {
     display: block;
   }
@@ -570,25 +456,29 @@ li:hover {
     left: 30px;
   }
 
+  /* Ocultar los enlaces de navegación cuando el menú está cerrado */
   .nav-links {
+    display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
     width: 100%;
     height: 100vh;
-    justify-content: center;
-    align-items: center;
-    background: #484872;
-    margin-top: -2000px;
-    transition: all 0.5s ease;
-    z-index: 9;
+    background-color: #484872;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateY(-100%);
+    transition: transform 0.3s ease-in-out;
   }
 
-  .mobile-menu {
-    margin-top: 0px;
-    border-bottom-right-radius: 30%;
+  /* Mostrar el menú cuando está abierto */
+  .nav-links.open {
+    transform: translateY(0);
   }
 
   .nav-links li {
-    margin: 30px auto;
+    margin: 20px 0;
   }
 
   .about-content {
