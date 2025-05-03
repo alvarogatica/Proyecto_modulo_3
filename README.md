@@ -13,7 +13,8 @@
  5. Que sea Responsive en varios dispositivos con uno de MediaQuery (opcional)
 
 ## PROTOTIPO DEL PROYECTO:
-![image](https://github.com/user-attachments/assets/b12ca98d-e831-4eca-a2cb-92ff0006f9b4)
+![image](https://github.com/user-attachments/assets/6e774580-b0af-4a5c-8997-3998a153c5df)
+
 
 
 ## SOLUCION AL PROYECTO EN HTML/CSS
