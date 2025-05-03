@@ -12,6 +12,10 @@
  4. Debe contar con Header, Main, "Area de productos", Footer
  5. Que sea Responsive en varios dispositivos con uno de MediaQuery (opcional)
 
+## PROTOTIPO DEL PROYECTO:
+![image](https://github.com/user-attachments/assets/b12ca98d-e831-4eca-a2cb-92ff0006f9b4)
+
+
 ## SOLUCION AL PROYECTO EN HTML/CSS
 
 ## Contamos con un archivo index.html, un archivo style.css y una carpeta con los assets que utlizamos, como imagenes en el proyecto.
