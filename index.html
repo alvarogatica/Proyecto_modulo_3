@@ -7,63 +7,68 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav class="navbar">
-        <img src="/assets/logobat.avif" alt="logo de la pagina" class="logo">
+    <nav class="navbar" role="navigation">
+        <img src="/assets/logobat.avif" alt="Logo principal del sitio Tempo God con ilustración de batería" class="logo">
         <ul class="nav-links">
-            <li class="active"><a href="#"></a>Inicio</li>
-            <li><a href="#"></a>Acerca del Instrumento</li>
-            <li><a href="#"></a>Productos</li>
-            <li class="btn"><a href="#"></a>Contacto</li>
+            <li><a href="#inicio" aria-current="page">Inicio</a></li>
+            <li><a href="#about">Acerca del Instrumento</a></li>
+            <li><a href="#products">Productos</a></li>
+            <li><a class="btn" href="#contact">Contacto</a></li>
         </ul>
-        <img src="/assets/menubutn.webp" alt="" class="menu-btn">
+        <img src="/assets/menubutn.webp" alt="Icono de menú desplegable" class="menu-btn">
     </nav>
+
     <header>
         <div class="header-content">
-            <h2>El mundo de la bateria</h2>
+            <h2>El mundo de la batería</h2>
             <div class="line"></div>
-                <h1>Tempo God</h1>
-                <a href="#" class="btn">Mas informacion</a>
+            <h1>Tempo God</h1>
+            <a href="#about" class="btn">Más información</a>
         </div>
     </header>
-    <main>
-        <section class="about">
+
+    <main role="main">
+        <section id="about" class="about">
             <div class="about-content">
-            <h1>Sobre el Instrumento</h1>
-            <div class="line"></div>
-            <p>Una batería es un conjunto de tambores, platillos y otros instrumentos de percusión, que se colocan en soportes para ser tocados por un solo músico,​ con baquetas en ambas manos y los pies accionando los pedales que controlan el platillo del hi-hat y el golpeador del bombo.</p>
-            <a href="https://es.wikipedia.org/wiki/Bater%C3%ADa_(instrumento_musical)#:~:text=Una%20bater%C3%ADa%20es%20un%20conjunto,y%20el%20golpeador%20del%20bombo." class="btn">Mas info</a>
+                <h1>Sobre el Instrumento</h1>
+                <div class="line"></div>
+                <p>Una batería es un conjunto de tambores, platillos y otros instrumentos de percusión, que se colocan en soportes para ser tocados por un solo músico,​ con baquetas en ambas manos y los pies accionando los pedales que controlan el platillo del hi-hat y el golpeador del bombo.</p>
+                <a href="https://es.wikipedia.org/wiki/Bater%C3%ADa_(instrumento_musical)#:~:text=Una%20bater%C3%ADa%20es%20un%20conjunto,y%20el%20golpeador%20del%20bombo." class="btn" target="_blank" rel="noopener noreferrer">Más info</a>
             </div>
         </section>
-        <section class="products">
+
+        <section id="products" class="products">
             <div class="title">
                 <h1>Algunos Productos</h1>
                 <div class="line"></div>
             </div>
             <div class="row">
                 <div class="col">
-                    <img src="/assets/yamaha.jpg" alt="Foto de Yamaha Drum">
+                    <img src="/assets/yamaha.jpg" alt="Batería acústica marca Yamaha color negro">
                     <h4>Yamaha</h4>
-                    <p>La marca de baterias YAMAHA es una de las maximas exponentes del mundo de la percusion</p>
-                    <a href="https://usa.yamaha.com/products/musical_instruments/drums/index.html" class="btn">Mas Info</a>
+                    <p>La marca de baterías Yamaha es una de las máximas exponentes del mundo de la percusión.</p>
+                    <a href="https://usa.yamaha.com/products/musical_instruments/drums/index.html" class="btn" target="_blank" rel="noopener noreferrer">Más Info</a>
                 </div>
                 <div class="col">
-                    <img src="/assets/tama.webp" alt="Foto de Tama Drum">
+                    <img src="/assets/tama.webp" alt="Batería acústica marca Tama color rojo">
                     <h4>Tama</h4>
-                    <p>La marca de bateria Tama es una de las maximas exponentes del mundo de la percusion</p>
-                    <a href="https://www.tama.com/asia/" class="btn">Mas Info</a>
+                    <p>La marca de baterías Tama es una de las máximas exponentes del mundo de la percusión.</p>
+                    <a href="https://www.tama.com/asia/" class="btn" target="_blank" rel="noopener noreferrer">Más Info</a>
                 </div>
             </div>
         </section>
     </main>
-    <footer>
+
+    <footer id="contact">
         <section class="footer">
-            <p>Club de Golf 7 Rios, Los Angeles, Bio Bio, Chile | Telefono: 973177098 | Email: alvaroandresgaticariquelme@gmail.com</p>
+            <p>Club de Golf 7 Ríos, Los Ángeles, Biobío, Chile | Teléfono: 973177098 | Email: alvaroandresgaticariquelme@gmail.com</p>
             <p>Copyright © 2025 Proyecto 3</p>
         </section>
     </footer>
+
     <script>
-        const menuBtn = document.querySelector('.menu-btn')
-        const navlinks = document.querySelector('.nav-links')
+        const menuBtn = document.querySelector('.menu-btn');
+        const navlinks = document.querySelector('.nav-links');
 
         menuBtn.addEventListener('click', () => {
             navlinks.classList.toggle('mobile-menu');
